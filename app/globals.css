@@ -1,0 +1,146 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: darkorange;
+  background-color: rgb(41, 51, 128);
+  padding-top: 85px; 
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+  background-color: rgb(255, 248, 228);
+  color: rgb(41, 51, 128);
+  padding: 10px 0;
+  height: 65px;
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.icon-container {
+  display: flex;
+  align-items: center;
+}
+
+.icon-container img {
+  width: 40px;
+  height: auto;
+  margin-right: 10px;
+}
+
+.icon-container p {
+  font-weight: bold;
+  color: rgb(41, 51, 128);
+  margin: 0;
+}
+
+
+.menu-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content:center;
+  gap: 10px;
+}
+
+.menu-list li {
+  font-weight: bold;
+  color: rgb(41, 51, 128);
+}
+
+.menu-list a {
+  color: rgb(41, 51, 128);
+  text-decoration: none;
+}
+
+
+.menu-list li:last-child {
+  margin-right: 20px;
+}
+
+h1 {
+  color: darkorange;
+  font-size: xx-large;
+  /* margin-top: 30px; */
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: bold;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+li a {
+  font-weight: bold;
+  color: darkorange;
+  font-size: 16px;
+  transition: font-size 0.2s;
+}
+
+li a:hover {
+  font-size: 18px;
+}
+
+
+.container {
+  display: flex;
+  justify-content: center; /* Centrirajte horizontalno (po X osi) */
+  align-items: center; /* Centrirajte vertikalno (po Y osi) */
+  /* height: 100vh; */
+}
+
+/* .centered-content {
+  text-align: left;
+} */
+
+.centered-content {
+  text-align: left; /* Center the text horizontally */
+  display: flex;
+  justify-content: center; /* Center the content horizontally */
+  align-items: center; /* Center the content vertically */
+}
+
+p {
+  padding: 5px;
+  max-width: 800px;
+}
+
+/* footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 100;
+  background-color: rgb(255, 248, 228);
+  color: darkorange;
+  padding: 1px 0;
+  text-align: center;  
+}
+
+footer p {
+  margin: 2px 0;
+} */
